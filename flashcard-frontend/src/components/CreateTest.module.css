@@ -1,0 +1,132 @@
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #1e2a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionCard {
+  background-color: #2f3640;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  color: #61dafb;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.question {
+  color: white;
+  font-size: 1.4em;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.answerButton {
+  background-color: #3f4b5b;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answerButton:hover {
+  background-color: #4a5666;
+}
+
+.answerButton.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.answerButton.wrong {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.nextButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.nextButton:hover {
+  background-color: #45a049;
+}
+
+.nextButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.resultCard {
+  background-color: #2f3640;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.score {
+  font-size: 1.2em;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.retryButton,
+.backButton {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.retryButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.retryButton:hover {
+  background-color: #45a049;
+}
+
+.backButton {
+  background-color: #61dafb;
+  color: #1e2a3a;
+}
+
+.backButton:hover {
+  background-color: #21a1f1;
+}
